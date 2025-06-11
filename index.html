@@ -292,18 +292,20 @@
                     that captivate audiences and bring visions to life through the art of storytelling.</p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" id="el-ejr0e7x1">
-                    <button
-                        class="border border-white text-white font-Inter font-semibold px-8 py-3 rounded-none hover:bg-neutral-200 transition-colors duration-300 transform hover:scale-105"
-                        id="el-ia7oyskc">
-                        <a href="#work" class="hover:text-gray-900" id="el-5j0mide4">
-                            View Our Work </a>
-                    </button>
-                    <button
-                        class="button border border-black font-Inter font-semibold px-8 py-3 rounded-none bg-white text-black transition-all duration-300 transform hover:scale-105"
-                        id="el-7ru005ww">
-                        <a href="#contact" class="hover:text-gray-900" id="el-5j0mide4">
-                            Start Your Project </a>
-                    </button>
+                    
+                    <a href="#work" class="hover:text-gray-900" id="el-5j0mide4">
+                        <button
+                            class="border border-white text-white font-Inter font-semibold px-8 py-3 rounded-none hover:bg-neutral-200 transition-colors duration-300 transform hover:scale-105"
+                            id="el-ia7oyskc">
+                            View Our Work
+                        </button></a>
+
+                    <a href="#contact" class="hover:text-gray-900" id="el-5j0mide4">
+                        <button
+                            class="button border border-black font-Inter font-semibold px-8 py-3 rounded-none bg-white text-black transition-all duration-300 transform hover:scale-105"
+                            id="el-7ru005ww">
+                            Start Your Project
+                        </button></a>
                 </div>
             </div>
 
@@ -811,7 +813,7 @@
                     rootMargin: '0px 0px -50px 0px'
                 };
 
-                const observer = new IntersectionObserver((entries) => {
+                const workobserver = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
                             entry.target.style.opacity = '1';
@@ -825,7 +827,7 @@
                     item.style.opacity = '0';
                     item.style.transform = 'translateY(30px)';
                     item.style.transition = `all 0.6s ease-out ${index * 0.1}s`;
-                    observer.observe(item);
+                    workobserver.observe(item);
                 });
             </script>
         </section>
@@ -851,19 +853,16 @@
                         id="el-bmk2i188">
                         <div class="aspect-square relative" id="el-azk3dip6">
                             <div class="w-full h-full bg-neutral-800 flex items-center justify-center" id="el-e3q1g4kq">
-                                <div class="w-32 h-32 bg-neutral-600 rounded-full flex items-center justify-center"
-                                    id="el-t6cki5dd">
-                                    <span class="text-white text-4xl font-Fraunces font-bold" id="el-tcnjmyi8">MD</span>
-                                </div>
+                                <img src="public/team/vivek.png" class="w-full" alt="">
                             </div>
                             <!-- Bio Overlay -->
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-neutral-800 to-transparent opacity-0 group-hover:opacity-100 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-out flex items-end"
                                 id="el-xkt1xox1">
                                 <div class="p-6 text-white" id="el-x5hipxk0">
-                                    <h3 class="font-Fraunces text-xl font-bold mb-2" id="el-w0z447sx">Marcus
-                                        Director</h3>
+                                    <h3 class="font-Fraunces text-xl font-bold mb-2" id="el-w0z447sx"> Vivek Agrawal
+                                    </h3>
                                     <p class="font-Inter text-sm text-neutral-300 mb-3" id="el-vuzukvjo">
-                                        Creative Director</p>
+                                        Founder and Producer</p>
                                     <p class="font-Inter text-sm leading-relaxed" id="el-a4uuz9aw">
                                         Visionary filmmaker with 15+ years crafting cinematic stories.
                                         Specializes in vintage aesthetics and emotional narratives.
@@ -879,10 +878,7 @@
                         id="el-w0taraad">
                         <div class="aspect-square relative" id="el-cutij3zj">
                             <div class="w-full h-full bg-neutral-800 flex items-center justify-center" id="el-9tzue3n1">
-                                <div class="w-32 h-32 bg-neutral-600 rounded-full flex items-center justify-center"
-                                    id="el-uvums0bm">
-                                    <span class="text-white text-4xl font-Fraunces font-bold" id="el-rgnaembe">SC</span>
-                                </div>
+                                <img src="public/team/.png" class="w-full" alt="">
                             </div>
                             <!-- Bio Overlay -->
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-neutral-800 to-transparent opacity-0 group-hover:opacity-100 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-out flex items-end"
@@ -907,10 +903,7 @@
                         id="el-knp1r2v6">
                         <div class="aspect-square relative" id="el-bkc3x6w4">
                             <div class="w-full h-full bg-neutral-800 flex items-center justify-center" id="el-ctb2tthv">
-                                <div class="w-32 h-32 bg-neutral-600 rounded-full flex items-center justify-center"
-                                    id="el-mlpdcis9">
-                                    <span class="text-white text-4xl font-Fraunces font-bold" id="el-3drjyrov">JE</span>
-                                </div>
+                                <img src="public/team/.png" class="w-full" alt="">
                             </div>
                             <!-- Bio Overlay -->
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-neutral-800 to-transparent opacity-0 group-hover:opacity-100 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-out flex items-end"
@@ -1360,8 +1353,7 @@
         <footer id="footer" class="bg-black text-white pt-16 relative overflow-hidden">
             <!-- Film grain overlay -->
             <div class="absolute inset-0 opacity-10 md:opacity-20 pointer-events-none" id="el-1ium7ugo">
-                <div class="w-full h-full"
-                    id="el-fy8fmkc8"></div>
+                <div class="w-full h-full" id="el-fy8fmkc8"></div>
             </div>
 
             <div class="container mx-auto px-6 relative z-10" id="el-qu8b4d3b">
@@ -1372,15 +1364,16 @@
                         <h3 class="text-2xl font-bold mb-4" id="el-eecypjzu"><img src="public/logo.png"
                                 alt="Cinecraft Productions" class="h-16"></h3>
                         <p class="text-gray-400 mb-4 leading-relaxed" id="el-t4s0yb8u">
-                            Creating cinematic masterpieces that captivate audiences and tell compelling stories through the art of visual narrative.
+                            Creating cinematic masterpieces that captivate audiences and tell compelling stories through
+                            the art of visual narrative.
                         </p>
-              <!--         <div class="flex items-center space-x-4" id="el-ruaq67c3">
+                        <!--         <div class="flex items-center space-x-4" id="el-ruaq67c3">
                             <img src="https://images.unsplash.com/photo-1561136911-1c02bd6bbdee?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8Y2hhcGxpbiUyNTIwaGF0JTI1MjBpY29uJTI1MjBtaW5pbWFsaXN0JTI1MjB2ZWN0b3J8ZW58MXx8fHwxNzQ5NDU3MTIxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
                                 alt="Chaplin Hat Icon" class="w-8 h-8 rounded-full object-cover opacity-80"
                                 id="el-mi17ze2f">
                             <span class="text-gray-400 text-sm" id="el-q9oypyv4">Crafted with vintage
                                 soul</span>
-                        </div>--> 
+                        </div>-->
                     </div>
 
                     <!-- Quick Links -->
